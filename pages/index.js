@@ -12,9 +12,11 @@ export default function Home() {
         <h1 className="text-6xl font-bold">
           Welcome to{' '}
           <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
+            Next.js Starter Pack!
           </a>
         </h1>
+
+        {process.env.NEXT_PUBLIC_ENV === "DEVELOPMENT" && <h2>"in dev mode"</h2>}
 
         <p className="mt-3 text-2xl">
           Get started by editing{' '}
